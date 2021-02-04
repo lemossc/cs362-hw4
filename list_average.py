@@ -1,8 +1,8 @@
 # Author:   Christopher LeMoss
 # Date:     February 7, 2021
 # Description:
-#   1. Calculates the average of a list.
-#   2. Returns 'None' if invalid side length.
+#   1. Calculates the average of a list (or tuple).
+#   2. Returns 'None' if invalid type and 0 if empty.
 
 
 def list_average(array):
