@@ -6,6 +6,12 @@
 
 
 def list_average(array):
+    # Check if input is a list / tuple
+    try:
+        array.__iter__
+    except AttributeError:
+        return None
+
     average = 0
     for element in array:
         if not is_number(element):
@@ -13,7 +19,7 @@ def list_average(array):
         else:
             average += element
     # Check if empty
-    if not array:
+    if array:
         average = average / len(array)
 
     return average
