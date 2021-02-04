@@ -5,14 +5,14 @@
 #   2. Returns 'None' if invalid side length.
 
 
-def list_average(list):
+def list_average(array):
     average = 0
-    for element in list:
+    for element in array:
         if not is_number(element):
             return None
         else:
             average += element
-    return average / len(list)
+    return average / len(array)
 
 
 def is_number(value):
