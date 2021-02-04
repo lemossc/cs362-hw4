@@ -3,19 +3,18 @@ import cube
 
 
 class TestCalculator(unittest.TestCase):
-    # Side length must be float or int
+    # Side length must be float or int and side lengths <= 0 don't make physical sense
     def test_invalid_input(self):
+        # String
         result = cube.volume("length")
         self.assertEqual(result, None)
+        # Complex
         result = cube.volume(complex(5, 3))
         self.assertEqual(result, None)
-
-    # Side lengths <= 0 don't make physical sense
-    def test_zero(self):
+        # Zero
         result = cube.volume(0)
         self.assertEqual(result, None)
-
-    def test_negative(self):
+        # Negative
         result = cube.volume(-2)
         self.assertEqual(result, None)
 
