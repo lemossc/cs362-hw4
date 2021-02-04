@@ -1,7 +1,8 @@
 # Author:   Christopher LeMoss
 # Date:     February 7, 2021
-# Description: Solution to Homework 4 Question 1
-#   for CS362 Software Engineering II at Oregon State University.
+# Description:
+#   1. Calculates the volume of a cube.
+#   2. Returns 'None' if invalid side length.
 
 # Calculate volume of a cube
 def volume(side_length):
