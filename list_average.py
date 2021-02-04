@@ -6,6 +6,9 @@
 
 
 def list_average(array):
+    if len(array) == 0:
+        return 0
+    
     average = 0
     for element in array:
         if not is_number(element):
